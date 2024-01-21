@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 from Adafruit_MotorHAT import Adafruit_MotorHAT, Adafruit_DCMotor
 
 import time
@@ -21,12 +21,11 @@ myMotor = mh.getMotor(3)
 
 # set the speed to start, from 0 (off) to 255 (max speed)
 myMotor.setSpeed(150)
-myMotor.run(Adafruit_MotorHAT.FORWARD);
+myMotor.run(Adafruit_MotorHAT.FORWARD)
 # turn on motor
-myMotor.run(Adafruit_MotorHAT.RELEASE);
+myMotor.run(Adafruit_MotorHAT.RELEASE)
 
-
-while (True):
+while True:
     print("Forward! ")
     myMotor.run(Adafruit_MotorHAT.FORWARD)
 
